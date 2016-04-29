@@ -48,7 +48,6 @@
     -o-transition: 0.2s ease-out;
     transition: 0.2s ease-out;
     border-bottom-right-radius: 5px;
-    border-right: 1px white solid;
     font-size: 17px;
 }
 
@@ -58,6 +57,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid white;
+    border-right: 1px white solid;
     overflow: hidden;
     max-height: 20px;
 }
