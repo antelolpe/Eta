@@ -1,0 +1,107 @@
+.sidebar {
+    color: white;
+    width: 350px;
+    overflow: hidden;
+    display: inline-flex;
+    min-width: 310px;
+    max-height: 780px;
+    z-index: 50000;
+    position: absolute;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+}
+
+.sidebar input {
+    display: none;
+}
+
+.sidebar input:checked+.items-hidden {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 1.0;
+    display: block;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    overflow: hidden;
+    
+}
+
+.sidebar .items-hidden {
+    height: 0px;
+    width: 0px;
+    opacity: 0.0;
+    overflow: hidden;
+    color: white;
+    background-color: #C1765E;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    border-bottom-right-radius: 5px;
+    border-right: 1px white solid;
+    font-size: 17px;
+}
+
+
+
+.sidebar .items-hidden div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+    max-height: 20px;
+}
+
+.sidebar .items-hidden div:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+
+
+.sidebar .items-hidden div span {
+    font-size: 12px;
+    margin-left: 25px;
+}
+
+.sidebar .items-hidden #section-name span {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.sidebar label {
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 31px;
+    padding: 5px;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 5px;
+    opacity: 0.85;
+}
+
+.sidebar label:hover {
+    opacity: 1.0;
+}
+
+.sidebar .items-hidden:hover,  .sidebar label:hover{
+    cursor: pointer;
+    
+}
+
+@media only screen and (max-width: 450px) {
+    .sidebar {
+        width: 50px;
+    }   
+    .sidebar .items-hidden #section-name span {
+        font-size: 12px;
+    }
+}

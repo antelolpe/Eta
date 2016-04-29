@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+html {
+    height: 100%;
+    min-height: 450px;
+}
+
+body {
+    background-image: linear-gradient( #aa533e, #ff934c);
+    width: 100%;
+    overflow: visible;
+    margin: 0 auto;
+}
+
+.banner {
+     -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    width: 100%;
+    height: 50px;
+    background-color: #3f3f37;
+    border-bottom: 1px solid #111;
+    mid-width: 500px;
+    font-size: 16px;
+    line-height: 0.5;
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.banner a { 
+    text-decoration: none;
+    color: white; 
+    display: inline-block;
+}
+
+.banner div, .banner span {
+    display: inline-block;
+    height: inherit;
+}
+
+
+.banner #left-wrapper {
+    margin-left: 1%;
+    float: left;
+    text-align: left;
+}
+
+.banner #right-wrapper {
+    margin-right: 1%;
+    float: right;
+    text-align: right;
+}
+
+.banner span{
+    font-size: 23px;
+    opacity: 0.9;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.banner #left-wrapper span:hover , .banner #right-wrapper span:hover {
+    opacity: 1.0;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+
+@media only screen and (max-width: 630px) {
+    .banner span {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .banner {
+        overflow: hidden;
+    }
+    .banner span {
+        font-size: 13px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+  
+}
+
